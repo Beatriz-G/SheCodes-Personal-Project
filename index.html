@@ -103,8 +103,15 @@
             </footer>
         </main>
         <script>
-            let pickleButton = document.querySelectory("pickle-button");
+            function pickles() {
+                let name = prompt("What is your name?");
+                let quantity = prompt("How many pickles do you want?");
 
+            }
+
+
+            let pickleButton = document.querySelectory(".pickle-button");
+            pickleButton.addEventListener("click," pickles);
         </script>
     </body>
 </html>
