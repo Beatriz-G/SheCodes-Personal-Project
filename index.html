@@ -12,7 +12,7 @@
             }
 
             header h1 {
-                font-size: 290%;
+                font-size: 320%;
                 color: green;
                 font-family: "Mooli", sans-serif;
                 font-weight: 900;
@@ -47,6 +47,7 @@
                 padding: 10px;
                 font-size: 150%;
                 color: rgb(3, 87, 3);
+                transition: width 3s;
             }
 
             p {
@@ -65,7 +66,8 @@
                 padding: 1% 0;
                 font-size: 150%;
                 font-family: "Mooli", sans-serif;
-                background-color:rgb(106, 204, 106)
+                background-color:rgb(106, 204, 106);
+                box-shadow: 10px 10px 5px rgb(93, 113, 104);
             }
 
             footer {
@@ -96,22 +98,22 @@
                 <p>Read more at <a href="https://en.wikipedia.org/wiki/Pickled_cucumber" target="_blank">Pickled Cucumber Wikipedia</a></p>
             </div>
             <button class="pickle-button">
-                Click here for Pickles
+                🥒 Click here for Pickles
             </button>
             <footer>
-                <p>Created by <a href="https://holabeatriz.com/" target="_blank">Beatriz</a></p>
+                <p>Created by <a href="https://holabeatriz.com/" target="_blank">Beatriz</a> | SheCodes Final Project</p>
             </footer>
         </main>
         <script>
-            function pickles() {
+            function pickle() {
                 let name = prompt("What is your name?");
                 let quantity = prompt("How many pickles do you want?");
 
+                alert("Thanks, " + name + "! We'll be sending your package of " + quantity + " pickles to you soon!");
             }
 
-
-            let pickleButton = document.querySelectory(".pickle-button");
-            pickleButton.addEventListener("click," pickles);
+            let pickleButton = document.querySelector(".pickle-button");
+            pickleButton.addEventListener("click", pickle);
         </script>
     </body>
 </html>
